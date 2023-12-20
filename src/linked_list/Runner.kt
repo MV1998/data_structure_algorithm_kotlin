@@ -24,14 +24,14 @@ fun main() {
     // Lecture - 2 - Deletion in LL
     // Delete head
     // Delete tail
-//    head = removedHead(head)
-//    println("after removing head ")
-//    traversalLinkedList(head)
-//    println()
-//
-//    head = removedTail(head)
-//    println("after removing tail ")
-//    traversalLinkedList(head)
+    head = removedHead(head)
+    println("after removing head ")
+    traversalLinkedList(head)
+    println()
+
+    head = removedTail(head)
+    println("after removing tail ")
+    traversalLinkedList(head)
 
     head = removeKthNode(head, 2)
     println("deleting with kth node")
