@@ -36,6 +36,23 @@ fun main() {
     head = removeKthNode(head, 2)
     println("deleting with kth node")
     traversalLinkedList(head)
+
+
+    var addHead = addAtHead(null, 101)
+    addHead = addAtHead(addHead, 102)
+    addHead = addAtHead(addHead, 103)
+    addHead = addAtHead(addHead, 1024)
+    addHead = addAtHead(addHead, 1025)
+    println("Adding at head")
+    traversalLinkedList(addHead)
+
+    addAtTail(addHead, 1)
+    println("Adding at Tail")
+    traversalLinkedList(addHead)
+
+    addAtKthNode(addHead, 90, 1001)
+    println("Adding at kth position")
+    traversalLinkedList(addHead)
 }
 
 // Time complexity - o(n)
@@ -123,4 +140,46 @@ fun removeKthNode(head : MLinkedList?, k : Int) : MLinkedList? {
     }
 
     return newHead
+}
+
+fun addAtHead(head : MLinkedList?, nodeVal : Int) : MLinkedList {
+    if (head == null) return MLinkedList(nodeVal)
+
+    var temp = MLinkedList(nodeVal)
+    temp.next = head
+    return temp
+}
+
+fun addAtTail(head : MLinkedList?, nodeVal : Int) : MLinkedList {
+    if (head == null) return MLinkedList(nodeVal)
+    var temp : MLinkedList = head
+    while (temp.next != null) {
+        temp = temp.next!!
+    }
+    temp.next = MLinkedList(nodeVal)
+    return temp
+}
+
+fun addAtKthNode(head : MLinkedList, k : Int, nodeVal: Int) : MLinkedList {
+    if (head == null) return MLinkedList(nodeVal)
+    if (k == 1) {
+        val temp = MLinkedList(nodeVal)
+        temp.next = head
+        return temp
+    }
+
+    var nk = 1
+    var temp : MLinkedList? = head
+    while (temp != null) {
+        if (nk + 1 == k) {
+            val newNode = MLinkedList(nodeVal)
+            newNode.next = temp.next
+            temp.next = newNode
+            break
+        }else {
+            temp = temp.next
+            ++nk
+        }
+    }
+    return head
 }
