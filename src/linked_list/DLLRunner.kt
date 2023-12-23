@@ -1,10 +1,9 @@
 package linked_list
 
 fun main() {
-    var head = addAtHeadDLL(null, 1)
+
+     var head = arrayToDLL(intArrayOf(101, 102, 103, 104, 105))
      head = addAtHeadDLL(head, 2)
-     head = addAtHeadDLL(head, 3)
-     head = addAtHeadDLL(head, 4)
 
     traversalOfDLL(head)
     println()
@@ -12,6 +11,21 @@ fun main() {
     traversalOfDLL(head)
     println()
     addAtTailOfDLL(head, 12)
+    traversalOfDLL(head)
+    println()
+    head = addAtKthLocationOfDLL(head, 1011, 7)
+    traversalOfDLL(head)
+    println()
+    head = addAtKthLocationOfDLL(head, 10111, 1)
+    traversalOfDLL(head)
+    println()
+    head = addAtKthLocationOfDLL(head, 198, 8)
+    traversalOfDLL(head)
+    println()
+    head = addAtKthLocationOfDLL(head, 1998,18)
+    traversalOfDLL(head)
+    println()
+    head = addNodeWhereDataMatches(head, 100001,12)
     traversalOfDLL(head)
     println()
 }
@@ -36,6 +50,78 @@ fun addAtTailOfDLL(head : MDLinkedList?, data : Int) : MDLinkedList {
     temp?.next = newNode
     newNode.prev = temp
 
+    return head
+}
+
+fun arrayToDLL(arr: IntArray) : MDLinkedList {
+    var head = MDLinkedList(arr[0])
+    var temp = head
+    for (index in 1..<arr.size) {
+        var newNode = MDLinkedList(arr[index])
+        temp.next = newNode
+        newNode.prev = temp
+        temp = newNode
+    }
+    return head
+}
+
+fun addAtKthLocationOfDLL(head : MDLinkedList?, data : Int, k : Int) : MDLinkedList {
+    if (head == null) return MDLinkedList(data)
+
+    if (k == 1) {
+        var temp = MDLinkedList(data)
+        temp.next = head
+        head.prev = temp
+        return temp
+    }
+
+    var nk = 1
+    var currentNode = head
+    while (currentNode != null) {
+        if (nk + 1 == k) {
+            var newNode = MDLinkedList(data)
+            var temp = currentNode.next
+            currentNode.next = newNode
+            newNode.prev = currentNode
+            newNode.next = temp
+            if (temp != null) {
+                temp.prev = newNode
+            }
+            break
+        }else {
+            ++nk
+            currentNode = currentNode.next
+        }
+    }
+    return head
+}
+
+fun addNodeWhereDataMatches(head : MDLinkedList?, data : Int, dataToBeMatched : Int) : MDLinkedList {
+    if (head == null) return MDLinkedList(data)
+
+    if (head.data == dataToBeMatched) {
+        var temp = MDLinkedList(data)
+        temp.next = head
+        head.prev = temp
+        return temp
+    }
+1
+    var currentNode : MDLinkedList = head
+    while (currentNode.next != null) {
+        if (currentNode.next?.data == dataToBeMatched) {
+            var newNode = MDLinkedList(data)
+            var temp = currentNode.next
+            currentNode.next = newNode
+            newNode.prev = currentNode
+            newNode.next = temp
+            if (temp != null) {
+                temp.prev = newNode
+            }
+            break
+        }else {
+            currentNode = currentNode.next!!
+        }
+    }
     return head
 }
 

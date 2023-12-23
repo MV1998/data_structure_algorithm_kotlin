@@ -6,53 +6,51 @@ fun main() {
     // start thinking edge case
     // like head is null, head.next is null
 
-
-
     // Lecture - 1 : take u forward
     // Create Linked list
     // Array to linked list
     // traversal
     // search an element
     // find length of linked list
-    val arr = intArrayOf(1,2,3,4,5,6,7,8,9,10,11,12,13)
-    var head : MLinkedList? = arrToLinkedList(arr)
-    traversalLinkedList(head)
-    println("Length of Linked Link ${lengthOfLinkedList(head)}")
-    println("Search result ${searchAnElementInLinkedList(head, 5)}")
+    val arr = intArrayOf(1,2,3,4,5)
+    var head = arrToLinkedList(arr)
+//    traversalLinkedList(head)
+//    println("Length of Linked Link ${lengthOfLinkedList(head)}")
+//    println("Search result ${searchAnElementInLinkedList(head, 5)}")
+//
+//
+//    // Lecture - 2 - Deletion in LL
+//    // Delete head
+//    // Delete tail
+//    head = removedHead(head)
+//    println("after removing head ")
+//    traversalLinkedList(head)
+//    println()
+//
+//    head = removedTail(head)
+//    println("after removing tail ")
+//    traversalLinkedList(head)
+//
+//    head = removeKthNode(head, 2)
+//    println("deleting with kth node")
+//    traversalLinkedList(head)
+//
+//
+//    var addHead = addAtHead(null, 101)
+//    addHead = addAtHead(addHead, 102)
+//    addHead = addAtHead(addHead, 103)
+//    addHead = addAtHead(addHead, 1024)
+//    addHead = addAtHead(addHead, 1025)
+//    println("Adding at head")
+//    traversalLinkedList(addHead)
+//
+//    addAtTail(addHead, 1)
+//    println("Adding at Tail")
+//    traversalLinkedList(addHead)
 
-
-    // Lecture - 2 - Deletion in LL
-    // Delete head
-    // Delete tail
-    head = removedHead(head)
-    println("after removing head ")
-    traversalLinkedList(head)
-    println()
-
-    head = removedTail(head)
-    println("after removing tail ")
-    traversalLinkedList(head)
-
-    head = removeKthNode(head, 2)
-    println("deleting with kth node")
-    traversalLinkedList(head)
-
-
-    var addHead = addAtHead(null, 101)
-    addHead = addAtHead(addHead, 102)
-    addHead = addAtHead(addHead, 103)
-    addHead = addAtHead(addHead, 1024)
-    addHead = addAtHead(addHead, 1025)
-    println("Adding at head")
-    traversalLinkedList(addHead)
-
-    addAtTail(addHead, 1)
-    println("Adding at Tail")
-    traversalLinkedList(addHead)
-
-    addAtKthNode(addHead, 90, 1001)
+    addAtKthNode(head, 6, 1001)
     println("Adding at kth position")
-    traversalLinkedList(addHead)
+    traversalLinkedList(head)
 }
 
 // Time complexity - o(n)
