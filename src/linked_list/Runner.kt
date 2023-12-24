@@ -107,7 +107,7 @@ fun removedHead(head : MLinkedList?) : MLinkedList? {
 
 fun removedTail(head : MLinkedList?) : MLinkedList? {
     var newHead = head
-    if (newHead == null || newHead.next == null) return null
+    if (newHead?.next == null) return null
     var temp = newHead
     while (temp?.next?.next != null) {
         temp = temp.next
@@ -158,7 +158,7 @@ fun addAtTail(head : MLinkedList?, nodeVal : Int) : MLinkedList {
     return temp
 }
 
-fun addAtKthNode(head : MLinkedList, k : Int, nodeVal: Int) : MLinkedList {
+fun addAtKthNode(head : MLinkedList?, k : Int, nodeVal: Int) : MLinkedList {
     if (head == null) return MLinkedList(nodeVal)
     if (k == 1) {
         val temp = MLinkedList(nodeVal)
