@@ -1,5 +1,16 @@
 package linked_list
 
+
+/*
+1351. Count Negative Numbers in a Sorted Matrix
+I have solved this question using two naive approaches but i have seen in the solution people have solved using binary search.
+when i will learn binary search then i will solve this question again.
+
+
+
+ */
+
+
 fun main() {
 
     // Tip while solving linked list question
@@ -12,8 +23,9 @@ fun main() {
     // traversal
     // search an element
     // find length of linked list
-    val arr = intArrayOf(1,2,3,4,5)
+    val arr = intArrayOf(1,0,0,1,0,0,1,1,1,0,0,0,0,0,0)
     var head = arrToLinkedList(arr)
+    print(getDecimalValue(head))
 //    traversalLinkedList(head)
 //    println("Length of Linked Link ${lengthOfLinkedList(head)}")
 //    println("Search result ${searchAnElementInLinkedList(head, 5)}")
@@ -48,9 +60,32 @@ fun main() {
 //    println("Adding at Tail")
 //    traversalLinkedList(addHead)
 
-    addAtKthNode(head, 6, 1001)
-    println("Adding at kth position")
-    traversalLinkedList(head)
+//    addAtKthNode(head, 6, 1001)
+//    println("Adding at kth position")
+//    traversalLinkedList(head)
+}
+
+fun getDecimalValue(head: MLinkedList?): Int {
+    if (head == null) return 0
+    if (head.next == null) return head.data
+
+    var builder : StringBuilder = StringBuilder()
+    var temp = head
+    while(temp != null) {
+        builder.append(temp.data)
+        temp = temp?.next
+    }
+
+    var binaryString : String = builder.toString()
+    var decimalNumber : Int = 0
+    var raise = 0
+    var length = binaryString.length-1
+    while(length >= 0) {
+        decimalNumber += (Math.pow(2.0, raise.toDouble()).toInt() * binaryString[length].digitToInt())
+        ++raise
+        --length
+    }
+    return decimalNumber
 }
 
 // Time complexity - o(n)
