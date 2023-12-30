@@ -1,5 +1,7 @@
 package linked_list
 
+import java.util.*
+
 
 /*
 1351. Count Negative Numbers in a Sorted Matrix
@@ -215,4 +217,39 @@ fun addAtKthNode(head : MLinkedList?, k : Int, nodeVal: Int) : MLinkedList {
         }
     }
     return head
+}
+
+
+// This is not optimial solution
+fun removeNthFromEnd(head: MLinkedList?, n: Int): MLinkedList? {
+    if (head == null) return null
+    if (head.next == null && n == 1) return null
+
+    var stack1 : Stack<Int> = Stack<Int>()
+    var temp = head
+    while(temp != null) {
+        stack1.push(temp.data)
+        temp = temp.next
+    }
+
+    var index = 1
+    var answer : Stack<Int> = Stack()
+    while(!stack1.empty()) {
+        if (index != n) {
+            answer.push(stack1.pop())
+        }else {
+            stack1.pop()
+        }
+        ++index
+    }
+
+    var newHead = MLinkedList(answer.pop())
+    var tempHead = newHead
+    while(!answer.empty()) {
+        var newNode = MLinkedList(answer.pop())
+        tempHead.next = newNode
+        tempHead = newNode
+    }
+    return newHead
+
 }
