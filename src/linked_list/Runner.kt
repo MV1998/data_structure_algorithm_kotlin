@@ -1,6 +1,7 @@
 package linked_list
 
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 /*
@@ -253,3 +254,14 @@ fun removeNthFromEnd(head: MLinkedList?, n: Int): MLinkedList? {
     return newHead
 
 }
+
+//fun postorderTraversal(root: MLinkedList?): List<Int> {
+//    if (root == null) return ArrayList()
+//
+//    var fromRight : List<Int> = postorderTraversal(root?.right)
+//    var fromLeft : List<Int> = postorderTraversal(root?.left)
+//    var makelist : MutableList<Int> = ArrayList()
+//    makelist.add()
+//    makelist.addAll(fromLeft)
+//    return makelist
+//}
