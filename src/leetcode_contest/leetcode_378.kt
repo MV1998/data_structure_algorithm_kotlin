@@ -4,8 +4,9 @@ import linked_list.MDLinkedList
 import linked_list.MLinkedList
 
 fun main() {
-    println(specialSubString("fafff"))
-    //println("abcaba".substring(5,6))
+   // println(solve("fafff"))
+    solveSubset(intArrayOf(1,5,11,5), 0, mutableListOf<Int>())
+    //print(solveSubsetReturn(intArrayOf(1,2,3), 0, mutableListOf<Int>()))
 }
 
 fun checkIfAllCharactersAreEqual(s : String) : Boolean {
@@ -108,4 +109,51 @@ fun addTwoNumbers(l1: MLinkedList?, l2: MLinkedList?): MLinkedList? {
         templ2 = templ2.next
     }
     return newHead
+}
+
+fun solve(s : String) {
+    var n = s.length
+    var i = 0
+    while (i < n) {
+        var j = i
+        while (j < n && s[i] == s[j]) {
+            j++
+        }
+        print("${s[i]} : ${j-1} | ")
+        i = j
+    }
+}
+
+// generating the subset of a array
+fun solveSubset(arr : IntArray, i : Int, ds : MutableList<Int>) {
+    if (i >= arr.size) {
+        print(ds)
+        return
+    }
+
+    ds.add(arr[i])
+    solveSubset(arr, i + 1, ds)
+    ds.removeAt(ds.size-1)
+    solveSubset(arr, i + 1, ds)
+}
+
+fun solveSubsetReturn(arr : IntArray, i : Int, ds : MutableList<Int>) : MutableList<MutableList<Int>>{
+    if (i >= arr.size) {
+        var s1 =  mutableListOf<MutableList<Int>>(ds)
+      //  print(s1)
+        return s1
+    }
+    var list = mutableListOf<MutableList<Int>>()
+    ds.add(arr[i])
+    var s1 : MutableList<MutableList<Int>> = solveSubsetReturn(arr, i + 1, ds)
+   // print(s1)
+    for (i in s1) {
+        list.add(i)
+    }
+    ds.removeAt(ds.size-1)
+    var s2 : MutableList<MutableList<Int>> = solveSubsetReturn(arr, i + 1, ds)
+    for (i in s2) {
+        list.add(i)
+    }
+    return list
 }
