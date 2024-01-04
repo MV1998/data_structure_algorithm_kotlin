@@ -2,11 +2,13 @@ package leetcode_contest
 
 import linked_list.MDLinkedList
 import linked_list.MLinkedList
+import java.util.PriorityQueue
 
 fun main() {
    // println(solve("fafff"))
-    solveSubset(intArrayOf(1,5,11,5), 0, mutableListOf<Int>())
+//    solveSubset(intArrayOf(1,5,11,5), 0, mutableListOf<Int>())
     //print(solveSubsetReturn(intArrayOf(1,2,3), 0, mutableListOf<Int>()))
+    println(squareRoot(10, 3))
 }
 
 fun checkIfAllCharactersAreEqual(s : String) : Boolean {
@@ -156,4 +158,37 @@ fun solveSubsetReturn(arr : IntArray, i : Int, ds : MutableList<Int>) : MutableL
         list.add(i)
     }
     return list
+}
+
+// sort the people
+fun sortPeople(names: Array<String>, heights: IntArray): Array<String> {
+    var priorityQueue : PriorityQueue<Int> =
+        PriorityQueue(Comparator.reverseOrder())
+
+    for (height in heights) {
+        priorityQueue.add(height)
+    }
+    var list : MutableList<String> = mutableListOf()
+    while(!priorityQueue.isEmpty()) {
+        var index = heights.indexOf(priorityQueue.poll())
+        list.add(names[index])
+    }
+    return list.toTypedArray()
+}
+
+fun squareRoot(n : Int, p : Int) : Int {
+    var s = 0
+    var e = n
+    var ans = 0
+    while (s <= e) {
+        println("running")
+        var mid = (s + e) / 2
+        if (mid * mid < 10) {
+            ans = mid
+            s = mid+1
+        }else {
+            e = mid-1
+        }
+    }
+    return ans
 }
