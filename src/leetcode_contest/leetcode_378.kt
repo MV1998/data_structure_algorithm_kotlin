@@ -2,6 +2,7 @@ package leetcode_contest
 
 import linked_list.MDLinkedList
 import linked_list.MLinkedList
+import java.util.Collections
 import java.util.PriorityQueue
 
 fun main() {
@@ -9,6 +10,14 @@ fun main() {
 //    solveSubset(intArrayOf(1,5,11,5), 0, mutableListOf<Int>())
     //print(solveSubsetReturn(intArrayOf(1,2,3), 0, mutableListOf<Int>()))
     println(squareRoot(10, 3))
+    println(0.01/10.0f)
+    var arrray : Array<String> = Array(100){""}
+    print('c'.code)
+    var charr = charArrayOf('a','c')
+    var arr = IntArray(10)
+    for (index in charr.indices) {
+        arr[index] = charr[index].code
+    }
 }
 
 fun checkIfAllCharactersAreEqual(s : String) : Boolean {
@@ -176,19 +185,37 @@ fun sortPeople(names: Array<String>, heights: IntArray): Array<String> {
     return list.toTypedArray()
 }
 
-fun squareRoot(n : Int, p : Int) : Int {
+fun squareRoot(n : Int, p : Int) : Float {
     var s = 0
     var e = n
-    var ans = 0
+    var ans : Float = 0.0F
     while (s <= e) {
-        println("running")
         var mid = (s + e) / 2
-        if (mid * mid < 10) {
-            ans = mid
+        if (mid * mid == n) {
+            return mid.toFloat()
+        }else if (mid * mid < 10) {
+            ans = mid.toFloat()
             s = mid+1
         }else {
             e = mid-1
         }
     }
+    var inc : Float = 0.1F
+    for (place in 1..p) {
+        while (ans*ans <= n) {
+            ans += inc
+        }
+        ans -= inc
+        inc /= 10.0F
+    }
     return ans
+}
+
+fun nextGreatestLetter(letters: CharArray, target: Char): Char {
+    var intArray = IntArray(letters.size)
+    for (index in letters.indices) {
+        intArray[index] = letters[index].code
+    }
+
+    return 'c'
 }
