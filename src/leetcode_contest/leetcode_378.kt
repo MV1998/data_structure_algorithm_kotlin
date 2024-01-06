@@ -9,15 +9,18 @@ fun main() {
    // println(solve("fafff"))
 //    solveSubset(intArrayOf(1,5,11,5), 0, mutableListOf<Int>())
     //print(solveSubsetReturn(intArrayOf(1,2,3), 0, mutableListOf<Int>()))
-    println(squareRoot(10, 3))
-    println(0.01/10.0f)
-    var arrray : Array<String> = Array(100){""}
-    print('c'.code)
-    var charr = charArrayOf('a','c')
-    var arr = IntArray(10)
-    for (index in charr.indices) {
-        arr[index] = charr[index].code
-    }
+//    println(squareRoot(10, 3))
+//    println(0.01/10.0f)
+//    var arrray : Array<String> = Array(100){""}
+//    print('c'.code)
+//    var charr = charArrayOf('a','c')
+//    var arr = IntArray(10)
+//    for (index in charr.indices) {
+//        arr[index] = charr[index].code
+//    }
+    println(nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'd'))
+    var pascalList = mutableListOf<MutableList<Int>>(mutableListOf(1), mutableListOf(1,1))
+    println(generate(5))
 }
 
 fun checkIfAllCharactersAreEqual(s : String) : Boolean {
@@ -216,6 +219,58 @@ fun nextGreatestLetter(letters: CharArray, target: Char): Char {
     for (index in letters.indices) {
         intArray[index] = letters[index].code
     }
+    var targetCode = target.code
+    var s = 0
+    var e = intArray.size-1
+    while (s <= e) {
+        var mid = (s+e)/2
+        if (intArray[mid] == targetCode) {
+            for (index in mid..<intArray.size-1) {
+                if (intArray[index] < intArray[index+1]) {
+                    return letters[index + 1]
+                }
+            }
+            return letters[0]
+        }else if (intArray[mid] > targetCode) {
+              e = mid - 1
+        }else {
+            s = mid + 1
+        }
+    }
+    for (index in letters.indices) {
+        if (letters[index].code > targetCode){
+            return letters[index]
+        }
+    }
+    return letters[0]
+}
 
-    return 'c'
+fun generate(numRows: Int): List<List<Int>> {
+    var pascalList = mutableListOf<MutableList<Int>>(mutableListOf(1),
+        mutableListOf(1,1))
+
+    if (numRows <= 1) {
+        pascalList.removeAt(1)
+        return pascalList
+    }
+    if (numRows <= 2) return pascalList
+
+    for (row in 2..<numRows) {
+        var previousRow = row - 1
+        var rowAt = mutableListOf<Int>()
+        for (index in 0..row) {
+            if (index - 1 < 0) {
+                rowAt.add(1)
+                continue
+            }
+            if (pascalList[previousRow].size <= index) {
+                rowAt.add(1)
+                continue
+            }
+            rowAt.add(pascalList[previousRow][index] + pascalList[previousRow][index-1])
+        }
+        pascalList.add(rowAt)
+    }
+
+    return pascalList
 }
