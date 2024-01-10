@@ -10,9 +10,11 @@ fun main() {
 //    println(lowerBound(intArrayOf(1,2,3,3,5,8,8,10,10,11), 8))
 //    println(upperBound(intArrayOf(1,2,3,3,5,8,8,10,10,11), 8))
 
-    var floorAndCeil = ceilAndFloor(intArrayOf(3,4,4,7,8,10), 8)
-    println(floorAndCeil[0])
-    println(floorAndCeil[1])
+//    var floorAndCeil = ceilAndFloor(intArrayOf(3,4,4,7,8,10), 8)
+//    println(floorAndCeil[0])
+//    println(floorAndCeil[1])
+
+    print(searchSortedArray(intArrayOf(4,5,6,7,0,1,2), 0))
 }
 
 fun binarySearch(arr : IntArray, target : Int) : Int {
@@ -122,4 +124,22 @@ fun ceilAndFloor(arr : IntArray, target: Int) : IntArray {
     var floor = floor(arr, target)
     var ceil = ceil(arr, target)
     return intArrayOf(floor, ceil)
+}
+
+
+fun searchSortedArray(nums: IntArray, target: Int): Int {
+    var low = 0
+    var high = nums.size - 1
+    while (low <= high) {
+        var mid = (low + high)/2
+        if (nums[mid] == target) {
+            return mid
+        }else if (nums[low] <= nums[mid] &&
+            nums[low] <= target && target <= nums[mid]) {
+            high = mid - 1
+        }else {
+            low = mid + 1
+        }
+    }
+    return -1
 }
