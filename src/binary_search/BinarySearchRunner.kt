@@ -143,3 +143,20 @@ fun searchSortedArray(nums: IntArray, target: Int): Int {
     }
     return -1
 }
+
+fun minimumInRotatedSortedArray(nums : IntArray) : Int {
+    var low = 0
+    var high = nums.size - 1
+    var minimum = Int.MAX_VALUE
+    while (low <= high) {
+        var mid = low + (high - low) / 2
+        if (nums[low] <= nums[mid]) {
+            minimum = Math.min(minimum, nums[low])
+            low = mid + 1
+        }else{
+            minimum = Math.min(minimum, nums[mid])
+            high = mid - 1
+        }
+    }
+    return minimum
+}
