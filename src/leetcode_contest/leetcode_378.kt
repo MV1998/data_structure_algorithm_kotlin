@@ -274,3 +274,39 @@ fun generate(numRows: Int): List<List<Int>> {
 
     return pascalList
 }
+
+fun halvesAreAlike(s : String) : Boolean {
+    var left = 0
+    var right = s.length / 2
+    var aVowelLength = 0
+    var bVowelLength = 0
+    while (right < s.length) {
+        if (s[left] == 'a'
+            || s[left] == 'e'
+            || s[left] == 'i'
+            || s[left] == 'o'
+            || s[left] == 'u'
+            || s[left] == 'A'
+            || s[left] == 'E'
+            || s[left] == 'I'
+            || s[left] == 'O'
+            || s[left] == 'U') {
+            aVowelLength++
+        }
+        if (s[right] == 'a'
+            || s[right] == 'e'
+            || s[right] == 'i'
+            || s[right] == 'o'
+            || s[right] == 'u'
+            || s[right] == 'A'
+            || s[right] == 'E'
+            || s[right] == 'I'
+            || s[right] == 'O'
+            || s[right] == 'U') {
+            bVowelLength++
+        }
+        left++
+        right++
+    }
+    return aVowelLength == bVowelLength
+}
