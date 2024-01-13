@@ -64,7 +64,7 @@ fun lowerBound(arr : IntArray, target: Int) : Int {
     return ans
 }
 
-//Upper Bound
+// Upper Bound
 // Definition says that smaller index such that arr[index] > target
 fun upperBound(arr : IntArray, target : Int) : Int {
     var ans = arr.size
