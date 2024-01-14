@@ -265,3 +265,45 @@ fun removeNthFromEnd(head: MLinkedList?, n: Int): MLinkedList? {
 //    makelist.addAll(fromLeft)
 //    return makelist
 //}
+
+fun partition(head: MLinkedList?, x: Int): MLinkedList? {
+    var lesserThanXList = mutableListOf<Int>()
+    var greaterThanXList = mutableListOf<Int>()
+    var temp = head
+    while (temp != null) {
+        if (temp.data < x) {
+            lesserThanXList.add(temp.data)
+        }else {
+            greaterThanXList.add(temp.data)
+        }
+        temp = temp.next
+    }
+    var head1 : MLinkedList? = null
+    var temp1 = head1
+    var head2 : MLinkedList? = null
+    var temp2 = head2
+    for (ele in lesserThanXList) {
+        if (head1 == null) {
+            var newNode = MLinkedList(ele)
+            head1 = newNode
+            temp1 = head1
+        }else {
+            var newNode = MLinkedList(ele)
+            temp1?.next = newNode
+            temp1 = temp1?.next
+        }
+    }
+    for (ele in greaterThanXList) {
+        if (head2 == null) {
+            var newNode = MLinkedList(ele)
+            head2 = newNode
+            temp2 = head2
+        }else {
+            var newNode = MLinkedList(ele)
+            temp2?.next = newNode
+            temp2 = temp2?.next
+        }
+    }
+    temp1?.next= head2
+    return head1
+}
