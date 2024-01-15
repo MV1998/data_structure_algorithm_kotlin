@@ -2,6 +2,29 @@ package binary_search
 
 /*
 Kotlin | Java | Retrofit | OkHttp | Coroutines | Picasso | Glide | HILT | Room SQLite | MVVM Pattern | Google API Integration |Third Party Library/API Integration | Design Patterns | UI Customization | MDC (Material Design Component) | Constraint Layout | Motion Layout | Android Jetpack Components | Firebase | Koin | Ktor
+
+
+ - Actively contribute as a vital member of an agile team, developing and enhancing CGI's TRADE360 SaaS product as a full stack developer.
+- Write, debug, and optimize code to ensure efficient functionality and performance of the software.
+- Develop intuitive and visually appealing UI components to enhance user experience and satisfaction.
+- Conduct thorough code reviews to ensure adherence to best practices and maintain high code quality standards.
+- Utilize a diverse range of technologies, including Java, Spring Boot, MySQL, AngularJS, Git, VSCode, Confluence, and JIRA, to accomplish project goals efficiently and effectively.
+
+
+
+- Backend Developer in an Agile team for over 1.5 years, focusing on critical backlog JIRAs, defect resolution, and some CRs.
+- Utilized Java, Spring Boot, MySQL, Intellij, and Gitlab for development.
+- Collaborated effectively with team members to deliver high-quality solutions.
+- Assisted in prioritizing and resolving critical issues to ensure smooth project progression.
+- Developed and maintained robust codebase, ensuring optimal performance and scalability.
+- Actively contributed to code reviews, providing insightful feedback to enhance code quality.
+- Successfully integrated new features and functionalities, enhancing the overall user experience.
+- Demonstrated strong problem-solving skills, addressing technical challenges promptly and efficiently.
+- Implemented unit tests and performed thorough debugging to ensure bug-free code deployment.
+- Maintained clear documentation of codebase and system architecture for future reference.
+- Actively participated in daily stand-up meetings, sprint planning, and retrospective sessions.
+
+
  */
 
 fun main() {

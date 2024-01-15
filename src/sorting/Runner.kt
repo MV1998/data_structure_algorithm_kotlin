@@ -8,7 +8,7 @@ fun main() {
 //        print("$element ")
 //    }
     var arrToBeSorted = intArrayOf(1, 0, 3, 4, 2)
-//    selectionSort.mergeSort(arrToBeSorted, 0, arrToBeSorted.size-1)
+    selectionSort.mergeSort(arrToBeSorted, 0, arrToBeSorted.size-1)
 //    arrToBeSorted.sortDescending()
     for (i in arrToBeSorted) {
         print("$i ")
