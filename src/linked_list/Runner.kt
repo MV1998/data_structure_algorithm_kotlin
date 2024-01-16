@@ -307,3 +307,4 @@ fun partition(head: MLinkedList?, x: Int): MLinkedList? {
     temp1?.next= head2
     return head1
 }
+
