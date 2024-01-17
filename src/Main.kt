@@ -12,18 +12,24 @@ fun removeOuterParentheses(s: String): String {
             stack.push(ch)
             continue
         }
-        if (ch == '(' && stack.peek() == ')' && !stack.isEmpty()) {
+        if (ch == '(' && stack.peek() == ')') {
             stack.pop()
-            string.append(ch)
+            if (!stack.isEmpty()) {
+                string.append(ch)
+            }
             continue
         }
-        if (ch == ')' && stack.peek() == '(' && !stack.isEmpty()) {
+        if (ch == ')' && stack.peek() == '(') {
             stack.pop()
-            string.append(ch)
+            if (!stack.isEmpty()) {
+                string.append(ch)
+            }
             continue
         }
         stack.push(ch)
-        string.append(ch)
+        if (!stack.isEmpty()) {
+            string.append(ch)
+        }
     }
     return string.toString()
 }
