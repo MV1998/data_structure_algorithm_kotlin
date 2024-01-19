@@ -23,6 +23,36 @@ fun main() {
     println(generate(5))
 }
 
+fun minimumAbsDifference(arr: IntArray): MutableList<MutableList<Int>>? {
+    var map : MutableMap<Int, MutableList<MutableList<Int>>> = mutableMapOf<Int,
+            MutableList<MutableList<Int>>>()
+    for (index in 0..<arr.size-1) {
+        for (secondIndex in index+1..<arr.size) {
+            var difference : Int = Math.abs(arr[index]-arr[secondIndex])
+            var list : MutableList<MutableList<Int>>? = map[difference]
+            if (list == null) {
+                var sort = mutableListOf(arr[index], arr[secondIndex])
+                sort.sort()
+                list = mutableListOf(sort)
+                map[difference] =  list
+            }else {
+                var sort = mutableListOf(arr[index], arr[secondIndex])
+                sort.sort()
+                list.add(sort)
+                map[difference] = list
+            }
+        }
+    }
+    var sortedArray : IntArray = IntArray(map.size)
+    var index = 0
+    map.forEach { (t, u) ->
+        sortedArray[index] = t
+        index++
+    }
+    sortedArray.sort()
+    return map[sortedArray[0]]
+}
+
 fun checkIfAllCharactersAreEqual(s : String) : Boolean {
     for (i in s.indices) {
         if ((i+1) < s.length && s[i] != s[i+1]) {
