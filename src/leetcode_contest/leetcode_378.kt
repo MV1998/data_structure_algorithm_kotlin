@@ -4,6 +4,8 @@ import linked_list.MDLinkedList
 import linked_list.MLinkedList
 import java.util.Collections
 import java.util.PriorityQueue
+import kotlin.math.abs
+import kotlin.math.min
 
 fun main() {
    // println(solve("fafff"))
@@ -18,39 +20,28 @@ fun main() {
 //    for (index in charr.indices) {
 //        arr[index] = charr[index].code
 //    }
-    println(nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'd'))
-    var pascalList = mutableListOf<MutableList<Int>>(mutableListOf(1), mutableListOf(1,1))
-    println(generate(5))
+//    println(nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'd'))
+//    var pascalList = mutableListOf<MutableList<Int>>(mutableListOf(1), mutableListOf(1,1))
+//    println(generate(5))
+    print(minimumAbsDifference(intArrayOf(40,11,26,27,-20)))
 }
 
 fun minimumAbsDifference(arr: IntArray): MutableList<MutableList<Int>>? {
-    var map : MutableMap<Int, MutableList<MutableList<Int>>> = mutableMapOf<Int,
-            MutableList<MutableList<Int>>>()
+   arr.sort() //O(NlogN)
+    var list : MutableList<MutableList<Int>> = mutableListOf()
+    var minimumDifference = Int.MAX_VALUE
     for (index in 0..<arr.size-1) {
-        for (secondIndex in index+1..<arr.size) {
-            var difference : Int = Math.abs(arr[index]-arr[secondIndex])
-            var list : MutableList<MutableList<Int>>? = map[difference]
-            if (list == null) {
-                var sort = mutableListOf(arr[index], arr[secondIndex])
-                sort.sort()
-                list = mutableListOf(sort)
-                map[difference] =  list
-            }else {
-                var sort = mutableListOf(arr[index], arr[secondIndex])
-                sort.sort()
-                list.add(sort)
-                map[difference] = list
-            }
+        var currentMin = abs(abs(arr[index]) - abs(arr[index+1]))
+        if (currentMin < minimumDifference) {
+            minimumDifference = currentMin
+            list.clear()
+            list.add(mutableListOf(arr[index], arr[index+1]))
+        }else if (currentMin == minimumDifference) {
+            list.add(mutableListOf(arr[index], arr[index+1]))
         }
     }
-    var sortedArray : IntArray = IntArray(map.size)
-    var index = 0
-    map.forEach { (t, u) ->
-        sortedArray[index] = t
-        index++
-    }
-    sortedArray.sort()
-    return map[sortedArray[0]]
+    // O(N)
+    return list
 }
 
 fun checkIfAllCharactersAreEqual(s : String) : Boolean {
