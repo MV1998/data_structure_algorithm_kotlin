@@ -23,7 +23,7 @@ fun main() {
 //    println(nextGreatestLetter(charArrayOf('c', 'f', 'j'), 'd'))
 //    var pascalList = mutableListOf<MutableList<Int>>(mutableListOf(1), mutableListOf(1,1))
 //    println(generate(5))
-    print(minimumAbsDifference(intArrayOf(40,11,26,27,-20)))
+    //print(minimumAbsDifference(intArrayOf(40,11,26,27,-20)))
 }
 
 fun minimumAbsDifference(arr: IntArray): MutableList<MutableList<Int>>? {
