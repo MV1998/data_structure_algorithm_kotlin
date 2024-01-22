@@ -26,6 +26,26 @@ fun main() {
     //print(minimumAbsDifference(intArrayOf(40,11,26,27,-20)))
 }
 
+fun pivotIndex(nums: IntArray): Int {
+    var leftSum = 0
+    var rightSum = 0
+
+    if (nums.size == 1) {
+        return 0
+    }
+    for(index in 1..<nums.size) {
+        rightSum += nums[index]
+    }
+    for(index in 1..<nums.size) {
+        leftSum += nums[index-1]
+        rightSum -= nums[index]
+        if (leftSum == rightSum) {
+            return index
+        }
+    }
+    return -1
+}
+
 fun minimumAbsDifference(arr: IntArray): MutableList<MutableList<Int>>? {
    arr.sort() //O(NlogN)
     var list : MutableList<MutableList<Int>> = mutableListOf()
