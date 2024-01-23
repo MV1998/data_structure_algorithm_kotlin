@@ -26,6 +26,37 @@ fun main() {
     //print(minimumAbsDifference(intArrayOf(40,11,26,27,-20)))
 }
 
+
+fun solve(low : Int, high : Int, arr: IntArray) : Int {
+    if (low > high) {
+        return -1
+    }
+    var mid = low + (high - low) / 2
+    if (mid == 0 && arr[mid] != arr[mid+1]) {
+        return arr[mid]
+    }else if (mid == arr.size - 1 && arr[mid] != arr[mid - 1]) {
+        return arr[mid]
+    }else if (arr[mid] != arr[mid-1] && arr[mid] != arr[mid+1]) {
+        return arr[mid]
+    } else {
+        var rightSide = solve(mid+1, high, arr)
+        if (rightSide != -1) {
+            return rightSide
+        }
+        var leftSide = solve(low, mid-1, arr)
+        if (leftSide != -1) {
+            return leftSide
+        }
+    }
+    return -1
+}
+fun singleNonDuplicate(nums: IntArray): Int {
+    if (nums.size == 1) {
+        return nums[0]
+    }
+    return solve(0, nums.size-1, nums)
+}
+
 fun pivotIndex(nums: IntArray): Int {
     var leftSum = 0
     var rightSum = 0
