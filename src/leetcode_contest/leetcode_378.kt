@@ -382,3 +382,19 @@ fun halvesAreAlike(s : String) : Boolean {
     }
     return aVowelLength == bVowelLength
 }
+
+fun isIsomorphic(s: String, t: String): Boolean {
+    var map : MutableMap<Char, Char> = mutableMapOf()
+    for (ind in s.indices) {
+        var sch = map[s[ind]]
+        if (sch == null) {
+            map[s[ind]] = t[ind]
+        }
+    }
+    var stringBuilder = StringBuilder()
+    for (ind in s.indices) {
+        stringBuilder.append(map[s[ind]])
+    }
+
+    return stringBuilder.toString() == t
+}
