@@ -2,8 +2,42 @@ package kotlin_collection_practice
 
 import java.time.Instant
 import java.util.*
+import kotlin.collections.HashMap
+import kotlin.collections.HashSet
 
 fun main() {
+    // immutable list
+    var immutableList = listOf<String>()
+    var notNulls = listOfNotNull<String>()
+    var emptyList = emptyList<String>()
+
+    // mutable list
+    var arrayList = arrayListOf<String>()
+    var mutableList = mutableListOf<String>()
+
+    // immutable set
+    var immutableSet = setOf<String>()
+    var notNullSet = setOfNotNull<String>()
+    var emptySet = emptySet<String>()
+
+    // mutable set
+    var mutableSet = mutableSetOf<String>() // object of LinkedHashSet()
+    var hashSet = hashSetOf<String>() // object of HashSet()
+    var linkedHashSet = linkedSetOf<String>() // object of LinkedHashSet()
+    var sortedSet = sortedSetOf<String>() // TreeSet()
+    var navigableSet = TreeSet<String>() // TreeSet()
+
+    //immutable map
+    var immutableMap = mapOf<String, String>()
+
+    //mutable map
+    var mutableMap = mutableMapOf<String, String>() // object of LinkedHashMap()
+    var hashMap = hashMapOf<String, String>() // object of HashMap()
+    var linkedHashMap = linkedMapOf<String, String>()  // object of LinkedHashMap()
+    var sortedMap = sortedMapOf<String, String>() // TreeMap()
+    var navigableMap = TreeMap<String, String>() // TreeMap()
+
+
     var books = arrayOf<Book>(
         Book(name = "Math1", 120.3, "Math", 234, Date.from(Instant.now())),
         Book(name = "Math2", 320.3, "Math", 234, Date.from(Instant.now())),
