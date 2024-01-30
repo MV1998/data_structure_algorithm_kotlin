@@ -4,6 +4,7 @@ import java.time.Instant
 import java.util.*
 import kotlin.collections.HashMap
 import kotlin.collections.HashSet
+import kotlin.collections.LinkedHashMap
 
 fun main() {
     // immutable list
@@ -21,21 +22,23 @@ fun main() {
     var emptySet = emptySet<String>()
 
     // mutable set
-    var mutableSet = mutableSetOf<String>() // object of LinkedHashSet()
-    var hashSet = hashSetOf<String>() // object of HashSet()
-    var linkedHashSet = linkedSetOf<String>() // object of LinkedHashSet()
-    var sortedSet = sortedSetOf<String>() // TreeSet()
-    var navigableSet = TreeSet<String>() // TreeSet()
+    var mutableSet : Set<String> = mutableSetOf<String>() // object of LinkedHashSet()
+    var hashSet : HashSet<String> = hashSetOf<String>() // object of HashSet()
+    var linkedHashSet : LinkedHashSet<String> = linkedSetOf<String>() // object of LinkedHashSet()
+    var sortedSet : SortedSet<String> = sortedSetOf<String>() // TreeSet()
+    var navigableSet : NavigableSet<String> = TreeSet<String>() // TreeSet()
 
+    var mapEntry : Map.Entry<String, String>
+    var listIterator : ListIterator<String>
     //immutable map
     var immutableMap = mapOf<String, String>()
 
     //mutable map
-    var mutableMap = mutableMapOf<String, String>() // object of LinkedHashMap()
-    var hashMap = hashMapOf<String, String>() // object of HashMap()
-    var linkedHashMap = linkedMapOf<String, String>()  // object of LinkedHashMap()
-    var sortedMap = sortedMapOf<String, String>() // TreeMap()
-    var navigableMap = TreeMap<String, String>() // TreeMap()
+    var mutableMap : Map<String, String> = mutableMapOf<String, String>() // object of LinkedHashMap()
+    var hashMap : HashMap<String, String> = hashMapOf<String, String>() // object of HashMap()
+    var linkedHashMap : LinkedHashMap<String, String> = linkedMapOf<String, String>()  // object of LinkedHashMap()
+    var sortedMap : SortedMap<String, String> = sortedMapOf<String, String>() // TreeMap()
+    var navigableMap : NavigableMap<String, String> = TreeMap<String, String>() // TreeMap()
 
 
     var books = arrayOf<Book>(
