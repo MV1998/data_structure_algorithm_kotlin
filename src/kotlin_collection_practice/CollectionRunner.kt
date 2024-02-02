@@ -40,7 +40,7 @@ fun main() {
     var sortedMap : SortedMap<String, String> = sortedMapOf<String, String>() // TreeMap()
     var navigableMap : NavigableMap<String, String> = TreeMap<String, String>() // TreeMap()
 
-
+    navigableMap.forEach { (t, u ) ->  }
 
     var books = arrayOf<Book>(
         Book(name = "Math1", 120.3, "Math", 234, Date.from(Instant.now())),
