@@ -33,6 +33,7 @@ fun main() {
     //immutable map
     var immutableMap = mapOf<String, String>()
 
+
     //mutable map
     var mutableMap : Map<String, String> = mutableMapOf<String, String>() // object of LinkedHashMap()
     var hashMap : HashMap<String, String> = hashMapOf<String, String>() // object of HashMap()
