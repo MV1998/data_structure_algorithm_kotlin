@@ -2,9 +2,11 @@ package kotlin_collection_practice
 
 import java.time.Instant
 import java.util.*
-import kotlin.collections.HashMap
-import kotlin.collections.HashSet
-import kotlin.collections.LinkedHashMap
+import kotlin.collections.ArrayDeque
+
+//import kotlin.collections.HashMap
+//import kotlin.collections.HashSet
+//import kotlin.collections.LinkedHashMap
 
 fun main() {
     // immutable list
@@ -33,15 +35,21 @@ fun main() {
     //immutable map
     var immutableMap = mapOf<String, String>()
 
-
     //mutable map
     var mutableMap : Map<String, String> = mutableMapOf<String, String>() // object of LinkedHashMap()
     var hashMap : HashMap<String, String> = hashMapOf<String, String>() // object of HashMap()
+
     var linkedHashMap : LinkedHashMap<String, String> = linkedMapOf<String, String>()  // object of LinkedHashMap()
     var sortedMap : SortedMap<String, String> = sortedMapOf<String, String>() // TreeMap()
     var navigableMap : NavigableMap<String, String> = TreeMap<String, String>() // TreeMap()
 
     navigableMap.forEach { (t, u ) ->  }
+
+    var stack : kotlin.collections.ArrayDeque<Char> = ArrayDeque<Char>() // Stack
+    var queue : Deque<String> = LinkedList() // Queue // Double Ended Queue
+
+
+    var priorityQueue : Queue<String> = PriorityQueue(Comparator.reverseOrder())
 
 
     var books = arrayOf<Book>(
