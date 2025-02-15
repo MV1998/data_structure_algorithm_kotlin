@@ -1,8 +1,29 @@
 import java.util.*
 
 fun main() {
-    print(removeOuterParentheses("(()())(())(()(()))"))
+//    print(removeOuterParentheses("(()())(())(()(()))"))
+
+    println(countCharacters("test input"))
 }
+
+
+
+fun countCharacters(str : String) : Map<Char, Int> {
+    val charactersCount = mutableMapOf<Char, Int>()
+
+    //getOrDefault, getOrNull, getOrPut
+    for (ch in str) {
+        val isPresent = charactersCount.getOrElse(ch) {null}
+        if (isPresent != null) {
+            charactersCount[ch] = charactersCount[ch]!! + 1
+        }else {
+            charactersCount[ch] = 1
+        }
+    }
+
+    return charactersCount
+}
+
 
 fun removeOuterParentheses(s: String): String {
     var stack : Stack<Char> = Stack()

@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3efed05-ca4a-48cc-a91f-e211db3cd15b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/codeforces/Solution.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/BuilderDesignPattern.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_structures_algorithm_kotlin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Algorithms/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Algorithms/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Algorithms/binary_search/BinarySearchRunner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Algorithms/binary_search/BinarySearchRunner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Algorithms/sorting/Runner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Algorithms/sorting/Runner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Algorithms/sorting/Sort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Algorithms/sorting/Sort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Data_Structure/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Data_Structure/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Data_Structure/linked_list/DLLRunner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Data_Structure/linked_list/DLLRunner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Data_Structure/linked_list/MLinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Data_Structure/linked_list/MLinkedList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Data_Structure/linked_list/Runner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Data_Structure/linked_list/Runner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Data_Structure/string_practice/StringRunner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Data_Structure/string_practice/StringRunner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/kotlin_collection_practice/Book.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/kotlin_collection_practice/Book.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kotlin/kotlin_collection_practice/CollectionRunner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/kotlin/kotlin_collection_practice/CollectionRunner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode_contest/leetcode_378.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode_contest/leetcode_378.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data_structure/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data_structure/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +35,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="data_structures_algorithm_kotlin" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="data_structures_algorithm_kotlin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -62,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -79,92 +62,78 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build data_structures_algorithm_kotlin.executor": "Run",
-    "Kotlin.BinarySearchRunnerKt.executor": "Run",
-    "Kotlin.CollectionRunnerKt.executor": "Run",
-    "Kotlin.DLLRunnerKt.executor": "Run",
-    "Kotlin.Leetcode_378Kt.executor": "Run",
-    "Kotlin.MainKt (1).executor": "Run",
-    "Kotlin.MainKt (2).executor": "Run",
-    "Kotlin.MainKt (3).executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "Kotlin.RunnerKt (1).executor": "Run",
-    "Kotlin.RunnerKt (2).executor": "Run",
-    "Kotlin.RunnerKt.executor": "Run",
-    "Kotlin.ZipOperatorKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dell/IdeaProjects/data_structures_algorithm_kotlin",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.migrate.to.gradle.popup": "false"
-  },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "/home/dell/.gradle"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build data_structures_algorithm_kotlin.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.BinarySearchRunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.BuilderDesignPatternKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CollectionRunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.DLLRunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.GraphCreationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Leetcode_378Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (2).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (3).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RunnerKt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RunnerKt (2).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.SolutionKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ZipOperatorKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dell/IdeaProjects/data_structures_algorithm_kotlin&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Kotlin.ZipOperatorKt">
-    <configuration name="CollectionRunnerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kotlin.kotlin_collection_practice.CollectionRunnerKt" />
-      <module name="data_structures_algorithm_kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kotlin.Algorithms.MainKt" />
+}</component>
+  <component name="RunManager" selected="Kotlin.RunnerKt (1)">
+    <configuration name="BuilderDesignPatternKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="design_patterns.BuilderDesignPatternKt" />
       <module name="data_structures_algorithm_kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.MainKt" />
+    <configuration name="GraphCreationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="data_structure.graph.GraphCreationKt" />
       <module name="data_structures_algorithm_kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (3)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+    <configuration name="RunnerKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="data_structure.array.RunnerKt" />
       <module name="data_structures_algorithm_kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZipOperatorKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flows.ZipOperatorKt" />
+    <configuration name="RunnerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="data_structure.maths.RunnerKt" />
       <module name="data_structures_algorithm_kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="data_structures_algorithm_kotlin" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="data_structures_algorithm_kotlin" />
-      <option name="filePath" />
+    <configuration name="SolutionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforces.SolutionKt" />
+      <module name="data_structures_algorithm_kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ZipOperatorKt" />
-        <item itemvalue="Kotlin.MainKt (3)" />
-        <item itemvalue="Kotlin.MainKt (2)" />
-        <item itemvalue="Kotlin.MainKt (1)" />
-        <item itemvalue="Kotlin.CollectionRunnerKt" />
+        <item itemvalue="Kotlin.RunnerKt (1)" />
+        <item itemvalue="Kotlin.RunnerKt" />
+        <item itemvalue="Kotlin.SolutionKt" />
+        <item itemvalue="Kotlin.BuilderDesignPatternKt" />
+        <item itemvalue="Kotlin.GraphCreationKt" />
       </list>
     </recent_temporary>
   </component>
