@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3efed05-ca4a-48cc-a91f-e211db3cd15b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/codeforces/Solution.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/BuilderDesignPattern.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data_structure/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data_structure/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/data_structure/array/Runner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data_structure/array/Runner.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
