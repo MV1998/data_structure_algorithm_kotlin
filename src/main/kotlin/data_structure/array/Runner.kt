@@ -1,5 +1,6 @@
 package data_structure.array
 
+// Array class with methods and extension functions.
 
 fun main() {
 
