@@ -3,8 +3,6 @@ package data_structure.graph
 import java.io.File
 import java.io.FileReader
 
-// Graph traversal methods.
-
 fun main() {
 
     val fileInput = FileReader(File("src/main/kotlin/data_structure/graph/graph.txt")).readLines()
