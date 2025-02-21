@@ -6,6 +6,7 @@ fun main() {
     // commit1 comment
     // commit2 comment
     // commit3 comment
+    // commit4 comment
     println(countCharacters("test input"))
 }
 
