@@ -3,7 +3,7 @@ import java.util.*
 fun main() {
 //    print(removeOuterParentheses("(()())(())(()(()))"))
 
-
+    // commit1 comment
     println(countCharacters("test input"))
 }
 
