@@ -4,6 +4,7 @@ fun main() {
 //    print(removeOuterParentheses("(()())(())(()(()))"))
 
     // commit1 comment
+    // commit2 comment
     println(countCharacters("test input"))
 }
 
