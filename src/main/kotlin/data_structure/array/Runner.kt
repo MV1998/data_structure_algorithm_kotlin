@@ -3,7 +3,6 @@ package data_structure.array
 // Array class with methods and extension functions.
 
 fun main() {
-
     val arrayOfString = arrayOf("one", "two")
     val emptyArray = emptyArray<String>()
     val arrayOfNulls = arrayOfNulls<String>(10)

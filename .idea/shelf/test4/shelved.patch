@@ -1,0 +1,17 @@
+Index: src/main/kotlin/data_structure/string_practice/StringRunner.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package data_structure.string_practice\n\nfun main() {\n    var s = \"Mohit\"\n    var ss = java.lang.String(\"\")\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/kotlin/data_structure/string_practice/StringRunner.kt b/src/main/kotlin/data_structure/string_practice/StringRunner.kt
+--- a/src/main/kotlin/data_structure/string_practice/StringRunner.kt	(revision 5baf3974bfa25c5ce3ae9500be58545ec81b073c)
++++ b/src/main/kotlin/data_structure/string_practice/StringRunner.kt	(date 1739966624368)
+@@ -3,4 +3,5 @@
+ fun main() {
+     var s = "Mohit"
+     var ss = java.lang.String("")
++
+ }
+\ No newline at end of file

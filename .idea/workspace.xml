@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3efed05-ca4a-48cc-a91f-e211db3cd15b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/data_structure/array/Runner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/data_structure/array/Runner.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,35 +57,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build data_structures_algorithm_kotlin.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.BinarySearchRunnerKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.BuilderDesignPatternKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.CollectionRunnerKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.DLLRunnerKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.GraphCreationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Leetcode_378Kt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt (1).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt (2).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt (3).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.RunnerKt (1).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.RunnerKt (2).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.RunnerKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.SolutionKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.ZipOperatorKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dell/IdeaProjects/data_structures_algorithm_kotlin&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build data_structures_algorithm_kotlin.executor": "Run",
+    "Kotlin.BinarySearchRunnerKt.executor": "Run",
+    "Kotlin.BuilderDesignPatternKt.executor": "Run",
+    "Kotlin.CollectionRunnerKt.executor": "Run",
+    "Kotlin.DLLRunnerKt.executor": "Run",
+    "Kotlin.GraphCreationKt.executor": "Run",
+    "Kotlin.Leetcode_378Kt.executor": "Run",
+    "Kotlin.MainKt (1).executor": "Run",
+    "Kotlin.MainKt (2).executor": "Run",
+    "Kotlin.MainKt (3).executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "Kotlin.RunnerKt (1).executor": "Run",
+    "Kotlin.RunnerKt (2).executor": "Run",
+    "Kotlin.RunnerKt.executor": "Run",
+    "Kotlin.SolutionKt.executor": "Run",
+    "Kotlin.ZipOperatorKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "NMA-3545-News-Screen-For-You-And-Other-Landing-Refactoring-with-BaseUIView",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/dell/IdeaProjects/data_structures_algorithm_kotlin",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Kotlin.RunnerKt (1)">
     <configuration name="BuilderDesignPatternKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design_patterns.BuilderDesignPatternKt" />
