@@ -1,0 +1,5 @@
+package design_patterns.observer_design_pattern.mediator_based
+
+interface DataProvider {
+    fun getData(userId : String) : User
+}
