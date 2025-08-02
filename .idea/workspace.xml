@@ -4,39 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3efed05-ca4a-48cc-a91f-e211db3cd15b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/Runner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/ConcreteMediator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/ConcreteObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/DataProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/IObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/Mediator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/Subject.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/UserDatabase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/mediator_based/UserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model/IObservable.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model/IObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model/MobileObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model/TVObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model/WeatherStationObservable.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/push_based_model/IObservable.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/push_based_model/IObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/push_based_model/MobileObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/push_based_model/TVObserver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/push_based_model/WeatherStationObservable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test2/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/test3/shelved.patch" beforeDir="false" />
+    <list default="true" id="c3efed05-ca4a-48cc-a91f-e211db3cd15b" name="Changes" comment="Implemented Observer Design Pattern with three different approaches.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/design_patterns/BuilderDesignPattern.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/design_patterns/builder_design_pattern/BuilderDesignPattern.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +50,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MV1998&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MV1998/data_structure_algorithm_kotlin.git&quot;,
+    &quot;accountId&quot;: &quot;6882d476-9cb1-4d0b-8daf-7a5cc3b8be1e&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -89,36 +70,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build data_structure_algorithm_kotlin.executor": "Run",
-    "Gradle.Build data_structures_algorithm_kotlin.executor": "Run",
-    "Kotlin.BinarySearchRunnerKt.executor": "Run",
-    "Kotlin.BuilderDesignPatternKt.executor": "Run",
-    "Kotlin.CollectionRunnerKt.executor": "Run",
-    "Kotlin.DLLRunnerKt.executor": "Run",
-    "Kotlin.GraphCreationKt.executor": "Run",
-    "Kotlin.Leetcode_378Kt.executor": "Run",
-    "Kotlin.MainKt (1).executor": "Run",
-    "Kotlin.MainKt (2).executor": "Run",
-    "Kotlin.MainKt (3).executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "Kotlin.RunnerKt (1).executor": "Run",
-    "Kotlin.RunnerKt (2).executor": "Run",
-    "Kotlin.RunnerKt.executor": "Run",
-    "Kotlin.SolutionKt.executor": "Run",
-    "Kotlin.ZipOperatorKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mohitvarma/IdeaProject/data_structure_algorithm_kotlin/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build data_structure_algorithm_kotlin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build data_structures_algorithm_kotlin.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.BinarySearchRunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.BuilderDesignPatternKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CollectionRunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.DLLRunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.GraphCreationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Leetcode_378Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (2).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (3).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RunnerKt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RunnerKt (2).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.RunnerKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.SolutionKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ZipOperatorKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mohitvarma/IdeaProject/data_structure_algorithm_kotlin/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/design_patterns/observer_design_pattern/pull_based_model" />
@@ -130,7 +111,7 @@
       <recent name="design_patterns.observer_design_pattern" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.RunnerKt (2)">
+  <component name="RunManager" selected="Kotlin.BuilderDesignPatternKt">
     <configuration name="BuilderDesignPatternKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design_patterns.BuilderDesignPatternKt" />
       <module name="data_structures_algorithm_kotlin.main" />
@@ -168,7 +149,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.RunnerKt (2)" />
         <item itemvalue="Kotlin.RunnerKt (1)" />
         <item itemvalue="Kotlin.RunnerKt" />
         <item itemvalue="Kotlin.SolutionKt" />
@@ -185,6 +165,19 @@
       <option name="presentableId" value="Default" />
       <updated>1702003210874</updated>
     </task>
+    <task id="LOCAL-00001" summary="Implemented Observer Design Pattern with three different approaches.">
+      <option name="closed" value="true" />
+      <created>1753010311747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753010311747</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented Observer Design Pattern with three different approaches." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Observer Design Pattern with three different approaches." />
   </component>
 </project>
