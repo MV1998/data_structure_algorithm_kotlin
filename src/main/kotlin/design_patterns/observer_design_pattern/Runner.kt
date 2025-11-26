@@ -35,7 +35,7 @@ fun main() = runBlocking {
     concreteMediator.registerObserver(observer2)
 
 
-    val subject = Subject(concreteMediator, userDatabase)
+    val subject = Subject(concreteMediator, userRepository)
     subject.updateUser("user_1", "Mohit Varma")
     delay(1000)
     subject.updateUser("user_2", "Vaibhav Patil")

@@ -3,7 +3,7 @@ package design_patterns.observer_design_pattern.mediator_based
 class ConcreteMediator: Mediator {
 
     private val observers = mutableListOf<IObserver>()
-    private lateinit var dataProvider: DataProvider
+    private lateinit var iDataSource: IDataSource
 
     override fun notifyChange(userId: String) {
         for(observer in observers) {
@@ -11,12 +11,12 @@ class ConcreteMediator: Mediator {
         }
     }
 
-    override fun setDataProvider(dataProvider: DataProvider) {
-        this.dataProvider = dataProvider
+    override fun setDataProvider(iDataSource: IDataSource) {
+        this.iDataSource = iDataSource
     }
 
     override fun registerObserver(iObserver: IObserver) {
-        iObserver.injectDataProvider(this.dataProvider)
+        iObserver.injectDataProvider(this.iDataSource)
         observers.add(iObserver)
     }
 

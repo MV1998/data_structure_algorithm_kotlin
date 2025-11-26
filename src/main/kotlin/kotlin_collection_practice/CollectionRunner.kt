@@ -4,6 +4,7 @@ import java.time.Instant
 import java.util.*
 import kotlin.collections.ArrayDeque
 
+
 //import kotlin.collections.HashMap
 //import kotlin.collections.HashSet
 //import kotlin.collections.LinkedHashMap
@@ -72,7 +73,8 @@ fun main() {
         Book(name = "Math4", 720.3, "Math", 234, Date.from(Instant.now())),
         Book(name = "Math5", 220.3, "Math", 234, Date.from(Instant.now())),
         Book(name = "Math16", 20.3, "Math", 234, Date.from(Instant.now())),
-        Book(name = "Math7", 70.3, "Math", 234, Date.from(Instant.now())),),
+        Book(name = "Math7", 70.3, "Math", 234, Date.from(Instant.now())),
+    ),
 
         listOf(
             Book(name = "Math1", 120.3, "Math", 234, Date.from(Instant.now())),
@@ -81,7 +83,53 @@ fun main() {
             Book(name = "Math4", 720.3, "Math", 234, Date.from(Instant.now())),
             Book(name = "Math5", 220.3, "Math", 234, Date.from(Instant.now())),
             Book(name = "Math16", 20.3, "Math", 234, Date.from(Instant.now())),
-            Book(name = "Math7", 70.3, "Math", 234, Date.from(Instant.now())),))
+            Book(name = "Math7", 70.3, "Math", 234, Date.from(Instant.now())),
+        ))
 
     listOfListOfBooks.flatten().also { it.forEach { println(it) } }
+
+    val s : Stack<Int> = Stack<Int>()
+    s.add(10)
+    s.add(20)
+    s.add(30)
+    s.add(40)
+    s.add(50)
+    s.add(60)
+    s.add(70)
+    s.add(80)
+    s.add(90)
+    s.add(100)
+    s.add(110)
+    s.add(120)
+    val ds : Stack<Int> = Stack<Int>()
+    deleteMidWithDS(s, ds, (s.size) / 2, 0)
+    println(s)
+    println(ds)
+    while(!ds.empty()) {
+        s.add(ds.pop())
+    }
+    println(s)
+
+
+}
+
+fun deleteMidWithoutDS(s: Stack<Int>, dltPos: Int, count: Int) {
+    if (s.empty()) return
+
+    val ele: Int = s.pop()
+    deleteMidWithoutDS(s, dltPos, count + 1)
+    if (dltPos != count) {
+        s.add(ele)
+    }
+}
+
+fun deleteMidWithDS(s: Stack<Int>, ds: Stack<Int>, dltPos: Int, count: Int) {
+    if (s.empty()) return
+
+    if (dltPos != count) {
+        ds.add(s.pop())
+    } else {
+        println(s.pop())
+    }
+    deleteMidWithDS(s, ds, dltPos, count + 1)
 }
